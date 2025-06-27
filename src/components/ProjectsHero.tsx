@@ -1,68 +1,65 @@
-import React from 'react';
+import React from "react";
 
 export const ProjectsHero: React.FC = () => {
   return (
     <section
       className="w-full bg-[#06153A] relative overflow-hidden projects-hero-section flex items-center"
       style={{
-        height: 'calc(100vh - 60px)',
-        minHeight: 'calc(100vh - 60px)',
+        height: "calc(100vh - 60px)",
+        minHeight: "calc(100vh - 60px)",
       }}
     >
-      {/* Content container */}
-      <div className="w-full max-w-[1440px] mx-auto relative px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col h-full z-10">
-        {/* Top section with text */}
-        <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-28">
-          {/* Left Heading Block */}
-          <div className="relative z-10 max-w-[600px]">
-            <div className="relative">
+      <div className="relative mx-auto container w-full h-full">
+        <div className="w-full max-w-[1440px] container mx-auto relative px-6 sm:px-10 flex flex-col h-full z-10">
+          {/* Top section with text */}
+          <div className="pt-16 sm:pt-20 md:pt-24 lg:pt-28">
+            {/* Left Heading Block */}
+            <div className="relative z-10 max-w-[600px]">
+              <div className="relative">
+                <h1
+                  className="text-white text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-normal leading-none"
+                  style={{
+                    fontFamily:
+                      '"Myriad Pro", "Myriad Pro-SemiExtended", Helvetica, Arial, sans-serif',
+                    fontWeight: 200,
+                  }}
+                >
+                  OUR
+                </h1>
+                {/* Decorative Line */}
+                <div className="absolute top-1/2 left-[50%] w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] h-[3px] bg-white transform -translate-y-1/2"></div>
+              </div>
               <h1
-                className="text-white text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-normal leading-none"
+                className="text-white text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-normal leading-none mt-4"
                 style={{
                   fontFamily:
                     '"Myriad Pro", "Myriad Pro-SemiExtended", Helvetica, Arial, sans-serif',
                   fontWeight: 200,
                 }}
               >
-                OUR
+                PROJECTS
               </h1>
-              {/* Decorative Line */}
-              <div className="absolute top-1/2 left-[50%] w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] h-[3px] bg-white transform -translate-y-1/2"></div>
             </div>
-            <h1
-              className="text-white text-[50px] sm:text-[70px] md:text-[90px] lg:text-[110px] font-normal leading-none mt-4"
-              style={{
-                fontFamily:
-                  '"Myriad Pro", "Myriad Pro-SemiExtended", Helvetica, Arial, sans-serif',
-                fontWeight: 200,
-              }}
-            >
-              PROJECTS
-            </h1>
           </div>
         </div>
+
+        <div className="absolute bottom-0 mx-auto container right-0 w-[85%] sm:w-[90%] md:w-[85%] lg:w-[80%] z-0">
+          <img
+            src="/images/Project.svg"
+            alt="City Skyline"
+            className="w-full h-auto object-contain object-bottom-right"
+            style={{
+              filter: "brightness(1.1)",
+              maxHeight: "60vh",
+            }}
+          />
+        </div>
+
+        <div className="absolute bottom-0 left-0 w-full h-[13px] bg-[#06153A] z-20"></div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-[#06153A] via-transparent to-[#06153A]/30 pointer-events-none z-5"></div>
       </div>
 
-      {/* SVG Image - Right side of viewport, bottom of hero section */}
-      <div className="absolute bottom-0 right-0 w-[85%] sm:w-[90%] md:w-[85%] lg:w-[70%] z-0">
-        <img
-          src="/images/Project.svg"
-          alt="City Skyline"
-          className="w-full h-auto object-contain object-bottom-right"
-          style={{
-            filter: 'brightness(1.1)',
-            maxHeight: '60vh'
-          }}
-        />
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-[13px] bg-[#06153A] z-20"></div>
-
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#06153A] via-transparent to-[#06153A]/30 pointer-events-none z-5"></div>
-
-      {/* Responsive height adjustments */}
       <style>{`
         @media (min-width: 640px) {
           .projects-hero-section {

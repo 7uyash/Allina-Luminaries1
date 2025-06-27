@@ -21,15 +21,15 @@ export const Metrics: React.FC = () => {
   const climateSectionRef = useRef<HTMLDivElement>(null);
 
   const keyFiguresData: MetricData[] = [
-    { value: '1 Mn', label: 'Streetlights Deployed' },
-    { value: '20K+', label: 'CCMS Panels Deployed' },
-    { value: '98%', label: 'Uptime of Lights' },
-    { value: '100%', label: 'On-Time Completion' }
+    { value: "1 Mn", label: "Streetlights Deployed" },
+    { value: "20K+", label: "CCMS Panels Deployed" },
+    { value: "98%", label: "Uptime of Lights" },
+    { value: "100%", label: "On-Time Completion" },
   ];
 
   const climateCommitmentData: MetricData[] = [
-    { value: '45%', label: 'Energy Efficiency' },
-    { value: '5 Mn Kg', label: 'Carbon Emissions Reduced' }
+    { value: "45%", label: "Energy Efficiency" },
+    { value: "5 Mn Kg", label: "Carbon Emissions Reduced" },
   ];
 
   useGSAP(() => {
@@ -100,26 +100,28 @@ export const Metrics: React.FC = () => {
               ref={keyFiguresButtonRef}
               className="text-left pl-4 lg:pl-8 text-white"
               style={{
-                fontFamily: 'Myriad Pro, Helvetica, Arial, sans-serif',
-                fontSize: 'clamp(16px, 2.5vw, 20px)',
+                fontFamily: "Myriad Pro, Helvetica, Arial, sans-serif",
+                fontSize: "clamp(16px, 2.5vw, 20px)",
                 fontWeight: 400,
-                letterSpacing: '0.05em'
+                letterSpacing: "0.05em",
               }}
             >
               Key Figures
             </button>
-            
+
             <button
               ref={climateCommitmentButtonRef}
               className="text-left pl-4 lg:pl-8 text-[#C1A278]"
               style={{
-                fontFamily: 'Myriad Pro, Helvetica, Arial, sans-serif',
-                fontSize: 'clamp(16px, 2.5vw, 20px)',
+                fontFamily: "Myriad Pro, Helvetica, Arial, sans-serif",
+                fontSize: "clamp(16px, 2.5vw, 20px)",
                 fontWeight: 400,
-                letterSpacing: '0.05em'
+                letterSpacing: "0.05em",
               }}
             >
-              Climate<br className="hidden lg:block" /><span className="lg:hidden"> </span>Commitment
+              Climate
+              <br className="hidden lg:block" />
+              <span className="lg:hidden"> </span>Commitment
             </button>
           </div>
 
